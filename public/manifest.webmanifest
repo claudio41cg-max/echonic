@@ -1,0 +1,19 @@
+{
+  "name": "Cláudio Voice Studio",
+  "short_name": "Cláudio Voice",
+  "description": "Estúdio de voz e clonagem com IA",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#161616",
+  "icons": [
+    {
+      "src": "/echonic-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
