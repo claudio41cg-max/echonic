@@ -18,10 +18,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Echonic",
-    template: "%s | Echonic",
+    default: "Cláudio Voice Studio",
+    template: "%s | Cláudio Voice Studio",
   },
-  description: "AI-powered text-to-speech and voice cloning platform",
+  description: "Estúdio de geração e clonagem de voz com inteligência artificial",
+  applicationName: "Cláudio Voice Studio",
+  manifest: "/manifest.webmanifest",
+  icons: { icon: "/echonic-logo.svg", apple: "/echonic-logo.svg" },
 };
 
 export default function RootLayout({
@@ -30,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Providers>
           <TRPCReactProvider>
