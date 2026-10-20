@@ -123,6 +123,11 @@ export function DashboardSidebar() {
       icon: AudioLines,
     },
     {
+      title: "Teste gratuito de voz",
+      url: "/teste-voz",
+      icon: Headphones,
+    },
+    {
       title: "Clonar voz",
       icon: Volume2,
       onClick: () => setVoiceDialogOpen(true),
