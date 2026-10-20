@@ -108,22 +108,22 @@ export function DashboardSidebar() {
 
   const mainMenuItems: MenuItem[] = [
     {
-      title: "Dashboard",
+      title: "Início",
       url: "/",
       icon: Home,
     },
     {
-      title: "Explore voices",
+      title: "Explorar vozes",
       url: "/voices",
       icon: LayoutGrid,
     },
     {
-      title: "Text to speech",
+      title: "Texto para voz",
       url: "/text-to-speech",
       icon: AudioLines,
     },
     {
-      title: "Voice cloning",
+      title: "Clonar voz",
       icon: Volume2,
       onClick: () => setVoiceDialogOpen(true),
     },
@@ -131,12 +131,12 @@ export function DashboardSidebar() {
 
   const othersMenuItems: MenuItem[] = [
     {
-      title: "Settings",
+      title: "Configurações",
       icon: Settings,
       onClick: () => router.push("/account/organizations"),
     },
     {
-      title: "Help and support",
+      title: "Ajuda e suporte",
       url: "mailto:business@echonic.com", // TODO: [EMAIL_ADDRESS]
       icon: Headphones,
     },
@@ -149,13 +149,13 @@ export function DashboardSidebar() {
           <div className="flex items-center gap-2 pl-1 group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:pl-0">
             <Image
               src="/echonic-logo.svg"
-              alt="Echonic"
+              alt="Cláudio Voice Studio"
               width={24}
               height={24}
               className="rounded-sm"
             />
             <span className="group-data-[collapsible=icon]:hidden font-semibold text-lg tracking-tighter text-foreground">
-              Echonic
+              Cláudio Voice Studio
             </span>
             <SidebarTrigger className="ml-auto lg:hidden" />
           </div>
@@ -195,7 +195,7 @@ export function DashboardSidebar() {
 
         <SidebarContent>
           <NavSection items={mainMenuItems} pathname={pathname} />
-          <NavSection label="Others" items={othersMenuItems} pathname={pathname} />
+          <NavSection label="Outros" items={othersMenuItems} pathname={pathname} />
         </SidebarContent>
 
         <div className="border-b border-dashed border-border" />
